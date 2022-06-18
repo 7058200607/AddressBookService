@@ -20,3 +20,5 @@ delete Address_Book where FName='mayuri'
 select count (state) from Address_Book
 ---UC7 ability to retrieve all data of city or state form address book
 select *from Address_Book where City ='aurangabad'or State='MH';
+---UC8 ability to sort data find a city of person name
+select FName,City from Address_Book order By City asc;

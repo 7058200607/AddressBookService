@@ -24,5 +24,6 @@ select *from Address_Book where City ='aurangabad'or State='MH';
 select FName,City from Address_Book order By City asc;
 ---UC9 ability to add new coloum 
 alter table addreess_Book add Name varchar (200),type varchar(200);
-
+---UC10
+select count (type) as  total from Address_Book;
 

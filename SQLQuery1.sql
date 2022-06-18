@@ -14,3 +14,9 @@ insert into Address_Book values('saurabh','patil','cidco','aurangabad','MH',4310
 insert into Address_Book values('ajay','wagh','cidco','aurangabad','MH',431001,7020060781,'ajaywagh9@gmail.com');
 ---UC5 Edit data 
 Update Address_Book set FName ='mayuri' where FName='vrushali'
+---UC5 delete data from address book service
+delete Address_Book where FName='mayuri'
+---UC6 
+select count (state) from Address_Book
+---UC7 ability to retrieve all data of city or state form address book
+select *from Address_Book where City ='aurangabad'or State='MH';

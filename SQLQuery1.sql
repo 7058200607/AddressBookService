@@ -7,8 +7,10 @@ create table Address_Book(FName varchar(200),LName varchar(200),Address varchar(
 ---UC3
 select* from Address_Book;
 ---UC4
-insert into Address_Book values('vrushali','Joshi','PundlikNagar','aurangabad','MH',431001,7820060781,'vrushalijoshi589@gmai.com');
-insert into Address_Book values('Mrunali','Pawar','Garkheda','aurangabd','MH',431001,9825060781,'mrunalipawar123@gmai.com');
-insert into Address_Book values('Punam','patil','samarthNagar','aurangabad','MH',431001,8920060781,'punampatil896@gmai.com');
-insert into Address_Book values('saurabh','patil','cidco','aurangabad','MH',431001,9620060781,'saurabhp59@gmai.com');
-insert into Address_Book values('ajay','wagh','cidco','aurangabad','MH',431001,7020060781,'ajaywagh9@gmai.com');
+insert into Address_Book values('vrushali','Joshi','PundlikNagar','aurangabad','MH',431001,7820060781,'vrushalijoshi589@gmail.com');
+insert into Address_Book values('Mrunali','Pawar','Garkheda','aurangabd','MH',431001,9825060781,'mrunalipawar123@gmail.com');
+insert into Address_Book values('Punam','patil','samarthNagar','aurangabad','MH',431001,8920060781,'punampatil896@gmail.com');
+insert into Address_Book values('saurabh','patil','cidco','aurangabad','MH',431001,9620060781,'saurabhp59@gmail.com');
+insert into Address_Book values('ajay','wagh','cidco','aurangabad','MH',431001,7020060781,'ajaywagh9@gmail.com');
+---UC5 Edit data 
+Update Address_Book set FName ='mayuri' where FName='vrushali'

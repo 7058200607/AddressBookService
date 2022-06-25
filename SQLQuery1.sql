@@ -30,4 +30,10 @@ update Address_Book set BookName='Three',type='family'where FName='punam'
 update Address_Book set BookName ='four',type='friend'where FName='saurabh'
 update Address_Book set BookName='five',type='friend'where FName='ajay'
 select* from Address_Book;
+---UC10
+insert into Address_Book values
+('komal','banswal','bansilalnagar','aurangabad','MH','431001','7895671357','komal12@gmail.com','one','friend')
+select count(type) as counting from Address_Book where type ='friend'
+select count(type) as counting from Address_Book;
+
 

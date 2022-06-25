@@ -3,7 +3,7 @@
 create database Address_Book_service;
 ---UC2
 use Address_Book_service;
-create table Address_Book(FName varchar(200),LName varchar(200),Address varchar(200),City varchar(200),State varchar(200),Zip varchar(200),PhoneNumber varchar(200),email varchar(200),Name varchar (200),type varchar(200));
+create table Address_Book(id int identity(1,1)primary key,FName varchar(200),LName varchar(200),Address varchar(200),City varchar(200),State varchar(200),Zip varchar(200),PhoneNumber varchar(200),email varchar(200),BookName varchar(200),type varchar(200));
 ---UC3
 select* from Address_Book;
 ---UC4
@@ -22,8 +22,12 @@ select count (state) from Address_Book
 select *from Address_Book where City ='aurangabad'or State='MH';
 ---UC8 ability to sort data find a city of person name
 select FName,City from Address_Book order By City asc;
----UC9 ability to add new coloum 
-alter table addreess_Book add Name varchar (200),type varchar(200);
----UC10
-select count (type) as  total from Address_Book;
+---UC9
+alter table Address_Book add BookName varchar(200),type varchar(200)
+update Address_Book set BookName='One',type='friend'where FName='mayuri'
+update Address_Book set BookName='Two',type='family'where FName='Mrunali'
+update Address_Book set BookName='Three',type='family'where FName='punam'
+update Address_Book set BookName ='four',type='friend'where FName='saurabh'
+update Address_Book set BookName='five',type='friend'where FName='ajay'
+select* from Address_Book;
 

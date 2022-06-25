@@ -35,5 +35,8 @@ insert into Address_Book values
 ('komal','banswal','bansilalnagar','aurangabad','MH','431001','7895671357','komal12@gmail.com','one','friend')
 select count(type) as counting from Address_Book where type ='friend'
 select count(type) as counting from Address_Book;
-
+---UC11 add same person as both friend and family
+insert into Address_Book values
+('komal','banswal','bansilalnagar','aurangabad','MH','431001','7945632189','komal12@gmail.com','one','family')
+select *from Address_Book;
 
